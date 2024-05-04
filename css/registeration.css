@@ -34,6 +34,7 @@ body {
 #RegistrationCard {
     width:420px;
     padding:20px;
+    margin: 50px 0;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.15);
     border-radius: 16px;
@@ -43,10 +44,15 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+#RegistrationCard .logo img {
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
 #RegistrationCard h1 {
     font-size: 36px;
     text-align: center;
-    
 }
 
 #RegistrationCard .input-box {

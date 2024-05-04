@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* colors */
+    --color-white:#fff;
+    --color-light-bleu : #e6f0f1;
+    --color-eastern-bleu: #16a4b7;
+    --color-gallery:#8d8c8c;
+    --color-off-black:#171717;
+    --color-scooter: #25bfcf;
+    /* fonts */
+    --font-size:16px;
+    --font-family-inter: 'Inter', sans-serif;
+    --font-weight-regular: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    font-size: var(--font-size);
+    font-family: var(--font-family-inter);
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px;
+    gap:80px;
+}
+
+header .login-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid var(--color-eastern-bleu);
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    color: var(--color-eastern-bleu);
+}
+
+header .login-button:hover {
+    opacity: 0.9;
+    scale: 1.1;
+    transform: all 0.4s;
+}
+
+nav ul {
+    list-style:none;
+    display: flex;
+    gap: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-gallery);
+    font-size: 16px;
+    font-weight: var(--font-weight-bold);
+}
+
+nav .navLink:hover,h1 {
+    color: var(--color-eastern-bleu);
+}
+
+main {
+    background-color: var(--color-light-bleu);
+}
+
+.firstsidelogo {
+    max-width: 380px;
+    height: auto;
+    position:absolute;
+    margin-left: 260px; /* very important for the image to be centered */
+    left:50%;
+    bottom: -235px;
+}
+
+.firstsidelogo img, .mainlogo img {
+    width: 100%;
+    height: auto;
+}
+
+.mainlogo {
+    max-width: 380px;
+    height: auto;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+}
+
+.aboutUs {
+    text-align: center;
+    padding: 30px;
+    width: 40%;
+}
+
+.aboutUs > * {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.aboutUs > p {
+       font-size: 18px;
+}
+
+footer {
+    background-color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color:var(--color-eastern-bleu);
+    font-weight: var(--font-weight-bold);
+}
+

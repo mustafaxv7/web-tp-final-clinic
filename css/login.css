@@ -43,6 +43,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+#loginCard .logo img {
+    display: block;
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
 #loginCard h1 {
     font-size: 36px;
     text-align: center;

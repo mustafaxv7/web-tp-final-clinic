@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* colors */
+    --color-white:#fff;
+    --color-light-bleu : #e6f0f1;
+    --color-eastern-bleu: #16a4b7;
+    --color-gallery:#8d8c8c;
+    --color-off-black:#171717;
+    --color-scooter: #25bfcf;
+    /* fonts */
+    --font-size:16px;
+    --font-family-inter: 'Inter', sans-serif;
+    --font-weight-regular: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+strong {
+    display: block;
+    color:var(--color-gallery);
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    font-size: var(--font-size);
+    font-family: var(--font-family-inter);
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px;
+    gap:80px;
+}
+
+header .login-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid var(--color-eastern-bleu);
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    color: var(--color-eastern-bleu);
+}
+
+header .login-button:hover {
+    opacity: 0.9;
+    scale: 1.1;
+    transform: all 0.4s;
+}
+
+nav ul {
+    list-style:none;
+    display: flex;
+    gap: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-gallery);
+    font-size: 16px;
+    font-weight: var(--font-weight-bold);
+}
+
+nav .navLink:hover {
+    color: var(--color-eastern-bleu);
+}
+
+nav .navLink::after {
+    content: "";
+    height:2px;
+    width:100%;
+    background-color: var(--color-eastern-bleu);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+nav .navLink:hover::after,
+.navLink:focus::after{
+    opacity: 1;
+}
+
+header .logo > img {
+    width:90%;
+}
+main {
+    background-color: var(--color-light-bleu) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:16px;
+    padding: 20px;
+}
+.doctor-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 300px;
+    width:100%;
+    height: fit-content;
+    padding:20px;
+    text-align: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.doctor-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.book-button {
+    text-decoration: none;
+    padding: 10px 35px;
+    border: 2px solid var(--color-eastern-bleu);
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    color: var(--color-eastern-bleu);
+}
+
+.book-button:hover {
+    opacity: 0.9;
+    scale: 1.1;
+    transform: all 0.4s;
+}
+
+footer {
+    background-color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color:var(--color-eastern-bleu);
+    font-weight: var(--font-weight-bold);
+}

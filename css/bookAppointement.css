@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* colors */
+    --color-white:#fff;
+    --color-light-bleu : #e6f0f1;
+    --color-eastern-bleu: #16a4b7;
+    --color-gallery:#8d8c8c;
+    --color-off-black:#171717;
+    --color-scooter: #25bfcf;
+    --color-dark-bleu: #023e8a;
+    /* fonts */
+    --font-size:16px;
+    --font-family-inter: 'Inter', sans-serif;
+    --font-weight-regular: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 900;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-light-bleu);
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    font-size: var(--font-size);
+    font-family: var(--font-family-inter);
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainlogo {
+    max-width: 380px;
+    height: auto;
+}
+
+.mainlogo img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+}
+.aboutUs {
+    width:450px;
+    padding:20px;
+    margin: 50px 0;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.aboutUs h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.aboutUs input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background:transparent;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    font-size: var(--font-size);
+    padding: 20px 40px 20px 20px;
+}
+.aboutUs input[type="date"] {
+        margin-bottom: 20px;
+}
+
+.aboutUs .input-box ,select{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 5px;
+}
+
+.input-box input::placeholder {
+    color: var(--color-gallery);
+}
+
+.aboutUs .input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background:transparent;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    font-size: var(--font-size);
+    padding: 20px 40px 20px 20px;
+}
+
+.aboutUs .bookappointement {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-white);
+    color: var(--color-scooter);
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.return-home {
+    display: flex;
+    gap: 16px
+}
+
+.return-home a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-dark-bleu);
+    font-weight: var(--font-weight-bold);
+}
+
